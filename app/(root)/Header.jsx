@@ -49,7 +49,7 @@ const RootHeader = function() {
         <nav className="flex flex-wrap justify-center">
           <NavLink leftIcon="/icons/home_icon.svg" href="/">Home</NavLink>
           <NavLink leftIcon="/icons/menu_book_icon.svg" href="/about">About</NavLink>
-          <NavLink leftIcon="/icons/world_icon.svg" href="/about">News & Updates</NavLink>
+          <NavLink leftIcon="/icons/world_icon.svg" href="/news">News & Updates</NavLink>
         </nav>
 
         {/* <div className="relative w-full h-[300px] max-w-[1200px] mx-auto">

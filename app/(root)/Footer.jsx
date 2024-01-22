@@ -58,7 +58,7 @@ const RootFooter = function() {
         <InfoSection title="Contact">
           <InfoRow name="Phone: " value="(Not yet available)"/>
           <InfoRow name="Email: " value="comingsoon@gmail.com"/>
-          <InfoRow name="Discord Server: " value="https://discord.gg/CJFED5jk" underline externalLink="https://discord.gg/CJFED5jk"/>
+          <InfoRow name="Discord Server: " value="https://discord.gg/xxxxx" underline externalLink="https://discord.gg/CJFED5jk"/>
           {/* <InfoRow name="Github" value="https://github.com/william-horn" underline externalLink="https://github.com/william-horn"/> */}
           {/* <InfoRow name="" value="William J. Horn"/> */}
         </InfoSection>

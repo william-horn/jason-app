@@ -182,19 +182,36 @@
   .test {
     background: 
       linear-gradient(
-        -90deg, 
-        black 40%, 
-        rgba(0, 0, 0, 0.623) 50%,
-        rgba(168, 27, 27, 0.692) 100%
+        to left top,  
+        rgb(12, 12, 12) 50px,
+        rgba(0, 0, 0, 0.5) 30%
         /* rgba(0, 0, 0, 0.753) */
       ),
-      url("/images/TKY-2-flip.jpg");
+      linear-gradient(
+        to right bottom,  
+        rgb(12, 12, 12) 50px,
+        rgba(0, 0, 0, 0) 30%
+        /* rgba(0, 0, 0, 0.753) */
+      ),
+      linear-gradient(
+        to left bottom,  
+        rgb(12, 12, 12) 50px,
+        rgba(0, 0, 0, 0) 30%
+        /* rgba(0, 0, 0, 0.753) */
+      ),
+      url("/images/TKY-9-top.jpg");
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0.5;
+    /* background-blend-mode:luminosity; */
 
-    filter: drop-shadow(0 0 10px black);
+    /* filter: drop-shadow(0 0 10px black); */
+  }
+
+  .clear-bg {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
 

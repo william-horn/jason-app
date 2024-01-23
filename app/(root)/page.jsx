@@ -40,7 +40,6 @@ const getEmailCount = async () => {
 
 const LandingPage = function() {
 
-  postEmail('test@something.com');
 
   return (
     <Page className="relative pb-24 bg-landing-page">

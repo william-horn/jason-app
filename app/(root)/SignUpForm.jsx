@@ -16,6 +16,9 @@ const SignUpForm = function({postEmail, countEmails}) {
   const [usedEmail, setUsedEmail] = useState(false);
 
   const onEmailPost = (e) => {
+    console.log('fired onsubmit');
+    e.preventDefault();
+    
     const text = inputRef.current.value;
     if (stringIsEmpty(text) || getEmailHistory() === "used") return;
 

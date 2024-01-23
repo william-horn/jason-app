@@ -24,6 +24,8 @@ const SignUpForm = function({postEmail, countEmails}) {
     setEmailHistory(() => ("used"));
     setUsedEmail(true);
     const res = await postEmail(text);
+
+    console.log('created: ', res);
   }
 
   const updateEmailCount = async() => {

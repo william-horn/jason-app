@@ -15,7 +15,7 @@ const SignUpForm = function({postEmail, countEmails}) {
   const [emailCount, setEmailCount] = useState(null);
   const [usedEmail, setUsedEmail] = useState(false);
 
-  const onEmailPost = async (e) => {
+  const onEmailPost = (e) => {
     const text = inputRef.current.value;
     if (stringIsEmpty(text) || getEmailHistory() === "used") return;
 
@@ -23,14 +23,18 @@ const SignUpForm = function({postEmail, countEmails}) {
     
     setEmailHistory(() => ("used"));
     setUsedEmail(true);
-    const res = await postEmail(text);
 
-    console.log('created: ', res);
+    postEmail(text)
+      .then(res => {
+        console.log('created: ', res);
+      });
   }
 
-  const updateEmailCount = async() => {
-    const count = await countEmails();
-    setEmailCount(count);
+  const updateEmailCount = () => {
+    countEmails()
+      .then((count) => {
+        setEmailCount(count);
+      });
   }
 
   useEffect(() => {

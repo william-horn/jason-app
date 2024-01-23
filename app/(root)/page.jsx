@@ -12,6 +12,7 @@ import SignUpForm from "./SignUpForm";
 
 import Email from "@/models/email/email";
 import connectMongoDB from "@/libs/db/mongodb";
+import { toSimpleArray } from "@/libs/utils/api-utils";
 
 const postEmail = async (email) => {
   "use server";
@@ -23,6 +24,8 @@ const postEmail = async (email) => {
   });
 
   console.log(original);
+
+  return toSimpleArray(original);
 }
 
 const getEmailCount = async () => {

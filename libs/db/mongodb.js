@@ -8,7 +8,8 @@ const getLocation = (location) => {
   const isDev = process.env.NODE_ENV === "development";
   console.log("Is development environment: ", isDev);
 
-  const prod = "mongodb+srv://williamjosephhorn:jAw56kGQhAucIGTt@cluster0.0mb4sfh.mongodb.net/nilhemoth";
+  // const prod = "mongodb+srv://williamjosephhorn:jAw56kGQhAucIGTt@cluster0.0mb4sfh.mongodb.net/nilhemoth";
+  const prod = "mongodb+srv://williamjosephhorn:jAw56kGQhAucIGTt@cluster0.0mb4sfh.mongodb.net/";
   const dev = "mongodb://localhost/nilhemoth-dev";
 
   let final;

@@ -17,7 +17,7 @@ import { toSimpleArray } from "@/libs/utils/api-utils";
 const postEmail = async (email) => {
   "use server";
 
-  await connectMongoDB();
+  await connectMongoDB('production');
 
   const original = await Email.create({
     email
@@ -31,7 +31,7 @@ const postEmail = async (email) => {
 const getEmailCount = async () => {
   "use server";
 
-  await connectMongoDB();
+  await connectMongoDB('production');
 
   const count = await Email.countDocuments();
 

@@ -1,6 +1,6 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "../globals.css";
-import Wireframe from "@/components/Wireframe";
+// import Wireframe from "@/components/Wireframe";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -12,7 +12,7 @@ import Footer from "./Footer";
 const RootLayout = function({ children }) {
   return (
     <html lang="en">
-      <Wireframe/>
+      {/* <Wireframe/> */}
       <head>
         <link rel="icon" href="/images/favicon.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
